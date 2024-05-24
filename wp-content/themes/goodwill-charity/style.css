@@ -1,0 +1,386 @@
+/*
+Theme Name:  Goodwill Charity
+Theme URI:   https://rarathemes.com/wordpress-themes/goodwill-charity/
+Author:      Rara Theme
+Author URI:  https://rarathemes.com/
+Template:    benevolent
+Description: Goodwill Charity is a mobile-friendly and beautiful theme for creating websites for non-profit organizations like charities, INGOs, NGOs, trusts, foundations, etc. The theme is compatible with the Give plugin, which allows to the collection of donations for causes. This theme features multiple sections on the homepage, such as Banner, Intro, Causes, Donation and Call to Action, that help to create a perfect landing page with information about the organization. The theme is SEO-friendly with optimized codes, which make it easy for your site to rank on search engines. Goodwill Charity is optimized to load fast, is translation-ready, mobile-friendly and schema ready. Check the demo at https://rarathemes.com/previews/?theme=goodwill-charity/, documentation at https://docs.rarathemes.com/docs/benevolent/ and get support at https://rarathemes.com/support-ticket/.
+Version: 1.0.1
+Requires PHP: 5.6
+Tested up to: 6.1
+Requires at least: 4.7
+License:     GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags:        Blog, two-columns, right-sidebar, footer-widgets, education, custom-background, custom-menu, featured-image-header, featured-images, post-formats, threaded-comments, translation-ready, full-width-template, theme-options
+Text Domain: goodwill-charity
+*/
+
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --primary-color-rgb: 12, 184, 110;
+    --primary-color: #0cb86e;
+    --secondary-color: #ffb649;
+    --secondary-color-rgb: 255, 182, 73;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 18px;
+}
+
+.home.has-slider .site-header.header-two .header-bottom,
+.site-header.header-two .header-bottom {
+    background: #fff;
+}
+
+.site-header.header-two .header-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header.header-two .right-panel {
+    flex-wrap: nowrap;
+}
+
+.site-header.header-two .site-branding .site-title {
+    line-height: 1.1;
+}
+
+.site-header.header-two .header-bottom .container::after {
+    content: none;
+}
+
+.site-header.header-two .site-branding {
+    margin: 0;
+}
+
+.site-header.header-two .site-branding.logo-text {
+    display: flex;
+    grid-gap: 16px;
+}
+
+.site-header.header-two .site-branding.logo-text .site-title-wrap {
+    padding-left: 0;
+}
+
+.site-header.header-two .site-branding .site-title a {
+    color: #000;
+}
+
+.site-header.header-two .site-branding .site-description {
+    color: #777;
+}
+
+.site-header.header-two .main-navigation a {
+    color: #2b2b2b;
+}
+
+@media only screen and (max-width: 1199px) {
+    .site-header.header-two .btn-donate {
+        width: 184px;
+    }
+}
+
+.site-header.header-two .main-navigation a:hover,
+.site-header.header-two .main-navigation a:focus,
+.site-header.header-two .main-navigation ul li:hover>a,
+.site-header.header-two .main-navigation ul li.current-menu-item>a,
+.site-header.header-two .main-navigation ul li.current_page_item>a,
+.site-header.header-two .main-navigation ul li.current-menu-ancestor>a,
+.site-header.header-two .main-navigation ul li.current_page_ancestor>a {
+    color: var(--secondary-color);
+    ;
+}
+
+.site-header.header-two #mobile-header a {
+    background: url(images/btn-menu-black.png) no-repeat;
+}
+
+.site-header.header-two .main-navigation ul li .btn-donate:hover,
+.site-header.header-two .main-navigation ul li .btn-donate:focus {
+    color: #2b2b2b;
+}
+
+a {
+    /* color: var(--primary-color); */
+    color: var(--primary-color);
+
+}
+
+a:hover {
+
+    color: var(--primary-color);
+    ;
+}
+
+.main-navigation a:hover,
+.main-navigation ul li:hover>a {
+    color: var(--secondary-color);
+}
+
+.site-header .btn-donate {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.site-header .btn-donate:hover {
+    background: var(--secondary-color);
+}
+
+.banner .text .btn-learn {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.banner .text .btn-learn:hover {
+    color: var(--secondary-color);
+}
+
+.intro .columns-3 .text-holder .btn {
+    color: var(--primary-color);
+
+}
+
+.our-community .header {
+    background: var(--primary-color);
+}
+
+.our-community .community-holder .hover-state .title {
+
+    color: var(--secondary-color);
+}
+
+.our-community .community-holder .hover-state .text-content {
+    border-top: 1px solid var(--secondary-color);
+
+}
+
+.donation-box .columns-4 .social-networks li a:hover {
+    color: var(--secondary-color);
+}
+
+.donation-box .columns-8 .tabset ul .ui-tabs-active a {
+    background: var(--primary-color);
+}
+
+.donation-box .columns-8 .tab-content .btn-continue {
+
+    background: var(--primary-color);
+
+}
+
+.donation-box .columns-8 .tab-content .btn-continue:hover {
+    background: var(--primary-color);
+}
+
+.blog-section .blog-holder .post .entry-title a:hover {
+    color: var(--secondary-color);
+}
+
+.blog-section .blog-holder .post .entry-meta a {
+    color: var(--primary-color);
+}
+
+.blog-section .blog-holder .post .entry-meta svg {
+    color: var(--primary-color);
+}
+
+.blog-section .blog-holder .post .readmore:hover {
+    color: var(--secondary-color);
+}
+
+#primary .post .entry-header .entry-title a:hover,
+#primary .page .entry-header .entry-title a:hover {
+    color: var(--secondary-color);
+}
+
+#primary .post .entry-meta {
+    color: var(--primary-color);
+}
+
+#primary .post .entry-meta a {
+    color: var(--primary-color);
+}
+
+#primary .post .entry-meta a:hover {
+    color: var(--secondary-color);
+}
+
+#primary .post .entry-footer .readmore {
+
+    color: var(--primary-color);
+}
+
+#primary .post .entry-footer .readmore:hover {
+    color: var(--secondary-color);
+}
+
+.comment-list .comment-metadata a:hover {
+    color: var(--secondary-color);
+}
+
+.comment-list .reply a:hover {
+    color: var(--secondary-color);
+}
+
+.comment-form input[type="submit"]:hover {
+    background: var(--primary-color);
+}
+
+.error404 .error-holder h1 {
+
+    color: var(--secondary-color);
+
+}
+
+.error404 .error-holder h2 {
+    color: var(--secondary-color);
+}
+
+#secondary .widget ul li a:hover {
+    color: var(--primary-color);
+}
+
+#secondary .widget.widget_text .text-holder .readmore:hover,
+.widget.widget_benevolent_featured_post .readmore:hover {
+    color: var(--secondary-color);
+}
+
+.widget.widget_benevolent_recent_post .entry-header .entry-title a:hover,
+.widget.widget_benevolent_popular_post .entry-header .entry-title a:hover {
+    color: var(--secondary-color);
+}
+
+.widget.widget_benevolent_recent_post .entry-header .entry-meta a,
+.widget.widget_benevolent_popular_post .entry-header .entry-meta a {
+    color: var(--primary-color);
+}
+
+.widget.widget_benevolent_recent_post .entry-header .entry-meta a:hover,
+.widget.widget_benevolent_popular_post .entry-header .entry-meta a:hover {
+    color: var(--secondary-color);
+}
+
+.widget.widget_tag_cloud .tagcloud a:hover {
+    background: var(--primary-color);
+}
+
+.widget.widget_calendar .calendar_wrap caption {
+
+    background: var(--primary-color);
+}
+
+.widget.widget_calendar tbody td a {
+
+    background: var(--primary-color);
+
+}
+
+.site-footer .promotional-block .btn-donate:hover {
+    background: var(--secondary-color);
+
+}
+
+.site-footer .columns-4 ul li a:hover,
+.site-footer .columns-6 ul li a:hover,
+.site-footer .widget ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.site-footer .footer-b .columns-4 .social-networks li a:hover {
+    color: var(--secondary-color);
+}
+
+.site-info a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.site-footer .widget.widget_benevolent_recent_post .entry-header .entry-title a:hover,
+.site-footer .widget.widget_benevolent_recent_post .entry-header .entry-title a:focus,
+.site-footer .widget.widget_benevolent_popular_post .entry-header .entry-title a:hover,
+.site-footer .widget.widget_benevolent_popular_post .entry-header .entry-title a:focus {
+    color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1199px) {
+    .mobile-header .btn-donate a {
+
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+
+    }
+
+    .mobile-header .btn-donate a:hover,
+    .mobile-header .btn-donate a:focus {
+
+        background: var(--secondary-color);
+    }
+
+    .mobile-header .mobile-menu .primary-menu ul li a:hover,
+    .mobile-header .mobile-menu .secondary-menu ul li a:hover,
+    .mobile-header .mobile-menu .primary-menu ul li a:focus,
+    .mobile-header .mobile-menu .secondary-menu ul li a:focus,
+    .mobile-header .mobile-menu .primary-menu ul li:hover>a,
+    .mobile-header .mobile-menu .primary-menu ul li:focus>a,
+    .mobile-header .mobile-menu .secondary-menu ul li:hover>a,
+    .mobile-header .mobile-menu .secondary-menu ul li:focus>a,
+    .mobile-header .mobile-menu .primary-menu ul .current-menu-item>a,
+    .mobile-header .mobile-menu .primary-menu ul .current-menu-ancestor>a,
+    .mobile-header .mobile-menu .primary-menu ul .current_page_item>a,
+    .mobile-header .mobile-menu .primary-menu ul .current_page_ancestor>a,
+    .mobile-header .mobile-menu .secondary-menu ul .current-menu-item>a,
+    .mobile-header .mobile-menu .secondary-menu ul .current-menu-ancestor>a,
+    .mobile-header .mobile-menu .secondary-menu ul .current_page_item>a,
+    .mobile-header .mobile-menu .secondary-menu ul .current_page_ancestor>a {
+        color: var(--primary-color);
+    }
+
+    .mobile-menu .social-networks li a:hover,
+    .mobile-menu .social-networks li a:focus {
+
+        background: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
+
+.mobile-menu .primary-menu .primary-menu-list .social-networks li a:focus {
+
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.entry-content a:hover,
+.entry-summary a:hover,
+.page-content a:hover,
+.comment-content a:hover,
+.widget .textwidget a:hover {
+    color: var(--secondary-color);
+}
+.site-header .site-branding .site-title {
+    font-size: 1.5em;
+   
+}
+.header-two .logo-text .site-logo,
+.mobile-header .logo-text .site-logo {
+    max-width: 100%;
+    width: unset;
+}
+@media only screen and (min-width: 767px) {
+    .banner .banner-text {
+        top: 45%;
+
+    }
+}
+.home.has-slider .site-header.header-two .header-bottom,
+.site-header.header-two .header-bottom{
+    padding: 25px 0 25px;
+}
+
+@media screen and (min-width: 37.5em) {
+
+    .main-navigation ul .submenu-toggle svg path {
+        fill: currentColor
+    }
+}

@@ -1,0 +1,10 @@
+13/04/2024 16:13:23: MooWoodle Log file Created
+
+13/04/2024 16:39:59: 
+
+        It seems that certain Moodle external web service functions are not configured correctly.
+        The missing functions following:["core_user_get_users"]
+
+
+13/04/2024 20:43:45: 
+        moowoodle error:Access control exception <a href="http://localhost/moodle43//admin/settings.php?section=externalservices">Link</a>

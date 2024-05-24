@@ -1,0 +1,227 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "color": "#20CBC2",
+          "slug": "primary"
+        },
+        {
+          "name": "Secondary",
+          "color": "#293B6B",
+          "slug": "secondary"
+        },
+        {
+          "name": "Accent",
+          "color": "#20CBC2",
+          "slug": "accent"
+        },
+        {
+          "name": "Accent Text",
+          "color": "#ffffff",
+          "slug": "accent-text"
+        },
+        {
+          "name": "Secondary Accent",
+          "color": "#293B6B",
+          "slug": "secondary-accent"
+        },
+        {
+          "name": "Secondary Accent Text",
+          "color": "#1D243C",
+          "slug": "secondary-accent-text"
+        },
+        {
+          "name": "Hover",
+          "color": "#15E1D0",
+          "slug": "hover"
+        },
+        {
+          "name": "Heading",
+          "color": "#293B6B",
+          "slug": "heading"
+        },
+        {
+          "name": "Highlight",
+          "color": "#4B5563",
+          "slug": "highlight"
+        },
+        {
+          "name": "Body",
+          "color": "#414141",
+          "slug": "body"
+        },
+        {
+          "name": "Surface",
+          "color": "#F5F7FA",
+          "slug": "surface"
+        },
+        {
+          "name": "Background",
+          "color": "#ffffff",
+          "slug": "background"
+        },
+        {
+          "name": "Light",
+          "color": "#EBEEFC",
+          "slug": "light"
+        },
+        {
+          "name": "Outline",
+          "color": "#D9D9D9",
+          "slug": "outline"
+        },
+        {
+          "name": "Neutral",
+          "color": "#9CA3AF",
+          "slug": "neutral"
+        },
+        {
+          "name": "Foreground",
+          "color": "#293B6BCC",
+          "slug": "foreground"
+        }
+      ],
+      "gradients": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "gradient": "linear-gradient(285deg, #20CBC2 -1.5%, #293B6B 100%)"
+        }
+      ],
+      "duotone": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "colors": [
+            "#20CBC2",
+            "#20CBC2"
+          ]
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "colors": [
+            "#293B6B",
+            "#293B6B"
+          ]
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "colors": [
+            "#ffffff",
+            "#ffffff"
+          ]
+        }
+      ]
+    },
+    "typography": {
+      "lineHeight": true,
+      "customFontSize": true,
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "",
+              "fontStyle": "normal",
+              "fontWeight": "100",
+              "src": [
+                "file:./assets/fonts/inter/Inter-Thin.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "",
+              "fontStyle": "normal",
+              "fontWeight": "300",
+              "src": [
+                "file:./assets/fonts/inter/Inter-Light.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./assets/fonts/inter/Inter-Regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "",
+              "fontStyle": "normal",
+              "fontWeight": "500",
+              "src": [
+                "file:./assets/fonts/inter/Inter-Medium.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "src": [
+                "file:./assets/fonts/inter/Inter-SemiBold.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": [
+                "file:./assets/fonts/inter/Inter-Bold.woff2"
+              ]
+            }
+          ],
+          "fontFamily": "\"Inter\", sans-serif",
+          "name": "Inter",
+          "slug": "body"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "button": {
+        "border": {
+          "radius": "0px",
+          "color": "var(--wp--preset--color--primary)"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--xxxx-large)",
+          "fontWeight": "var(--wp--custom--font-weight--semi-bold)",
+          "lineHeight": "var(--wp--custom--line-height--xx-small)",
+          "letterSpacing": "-2px"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--heading)"
+        },
+        "spacing": {
+          "margin": {
+            "bottom": "var(--wp--preset--spacing--small)"
+          }
+        }
+      }
+    },
+    "typography": {
+      "fontSize": "var(--wp--preset--font-size--small)",
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontWeight": "var(--wp--custom--font-weight--regular)",
+      "lineHeight": "var(--wp--custom--line-height--large)"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--body)"
+    }
+  }
+}
